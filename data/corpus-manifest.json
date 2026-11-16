@@ -1,0 +1,256 @@
+{
+  "version_label": "V12（页眉/页脚/目录/表格/图片/格式清洗 + 人工逐篇校对 + 文献与附录分级 + 元数据回填）",
+  "frozen_at": "2026-10-15",
+  "corpus": "experiments/data/raw/chinese-maritime-20261015-v12-FINAL-v9.jsonl",
+  "corpus_sha256": "70696b060217a1258b4d4e263c55f982bc9f54e0c64d46bb3cb9dd0fc68035f7",
+  "chunks": "experiments/data/derived/chinese-maritime-20261015-v12-chunks.jsonl",
+  "chunks_sha256": "bb4a2b884ec81f59e6c4d3c18fb58ca095d31633b387a9237c601afb7efd6b62",
+  "chunk_count": 966,
+  "chunk_spec": "chunk-spec-20261015-v3（递归分层 600/100；\\n\\n→\\n→。！？；，→空格→兜底；表格整块+续表提示；拉丁复合词保护）",
+  "documents": 48,
+  "total_chars": 404444,
+  "per_document": [
+    {
+      "doc_id": "tavily-4b63674cd9b8d859",
+      "chars": 29879,
+      "sha256": "1df9b2994e5ba3daac3a286fa4c74b2dc177af64af03445ea8e51275f915877a"
+    },
+    {
+      "doc_id": "tavily-efe6e2398cae00a4",
+      "chars": 1432,
+      "sha256": "c65c26a7373d7ad14ac72a4ab155e639ec58320b6ec8cbbd719fd6e9e8685222"
+    },
+    {
+      "doc_id": "tavily-0b6bc6ef955ce5c9",
+      "chars": 28334,
+      "sha256": "9b2bbfc62b0f14f6d93127fad685bbbe0804acc2c015a5de1b248d33fbc56a40"
+    },
+    {
+      "doc_id": "tavily-6431fb628e1bf0ca",
+      "chars": 789,
+      "sha256": "1f2af7e3b453220411f08cdde8e8563e18f95ee8733b91fb30d24787f32c1335"
+    },
+    {
+      "doc_id": "tavily-8ee31f4f6409a372",
+      "chars": 2719,
+      "sha256": "e94e1c70dcb6960639293d3d8130dd8c2c37a212f3459d2531f22010c58bce38"
+    },
+    {
+      "doc_id": "tavily-f917dabc98686cab",
+      "chars": 2647,
+      "sha256": "9d587165c8d1de6e4254d0b68caa3839cd1085cf0d277d6b48eaef1a11a1329a"
+    },
+    {
+      "doc_id": "tavily-6fe2a31bf04a06e0",
+      "chars": 6501,
+      "sha256": "42fe15c38a7104ee3368e2005b27503b00a86734246fde2cf34fbcbd33415c91"
+    },
+    {
+      "doc_id": "tavily-a566ce4662b65e09",
+      "chars": 2717,
+      "sha256": "0893f8427c229a2c26ee4a9787078efd233676a79729e0a4688185c391a48c25"
+    },
+    {
+      "doc_id": "tavily-00917c434fbe8111",
+      "chars": 1418,
+      "sha256": "aa960838e2d4121ce12e7ad79119fff9e7ea8dd5e0c48ee8d92a04a47fc96d43"
+    },
+    {
+      "doc_id": "tavily-775d4e4c9f0555d2",
+      "chars": 3263,
+      "sha256": "d6e3d029af155ea4427e8062d9ecff6ae28b0fd40a108d98474605425f6de7a6"
+    },
+    {
+      "doc_id": "tavily-597a0a5ea751bc24",
+      "chars": 19001,
+      "sha256": "b5c568248c9e5178f134187d9c3657a34aa8a2b4f1965ab55ce429df3c6ed9b4"
+    },
+    {
+      "doc_id": "tavily-d8a075377c01d92d",
+      "chars": 3596,
+      "sha256": "c748dcfafffe0ca60db0fbe9e3d2caf52dbf75188861b248e06b132339187aa3"
+    },
+    {
+      "doc_id": "tavily-88df58156f7d2163",
+      "chars": 1228,
+      "sha256": "7dc9b9732571ba019327c123a427b97a8c76f79f091f7a88ff4b5b638b4dbeee"
+    },
+    {
+      "doc_id": "tavily-f0c3cc125831b7d4",
+      "chars": 597,
+      "sha256": "a84d8fcc7def74bcd7408fabcabaf36ffc6d08c01a137c9bcc93a43cde9f4a2a"
+    },
+    {
+      "doc_id": "tavily-119cee148ead7abe",
+      "chars": 800,
+      "sha256": "f0c350db0adf308f9959bd49f14a047a9325f4c6ebfa455ee15b3b104e80b3c1"
+    },
+    {
+      "doc_id": "tavily-af71a0fc511fc5f0",
+      "chars": 10706,
+      "sha256": "e7f91fdad44e7bee159fa0a078ba7ef802b2c47f31df981603220b46ec2bb6fd"
+    },
+    {
+      "doc_id": "tavily-02cda0eec92b85f2",
+      "chars": 7215,
+      "sha256": "d677e9ef5e36407b6cf4ec45e6e71d0bcd17e070a19a2f7b31be7d1b3a507870"
+    },
+    {
+      "doc_id": "tavily-ab66fe2298d49e0e",
+      "chars": 1359,
+      "sha256": "34f1d583a315662390c478fba93f2d4b50add54f4ed9b94e2cfae1c148c0a12b"
+    },
+    {
+      "doc_id": "tavily-a945ec44f2a63e23",
+      "chars": 11472,
+      "sha256": "4eaca45f89594810343bab720d5219c313155ce66e0625a840e24a8dcb896ff7"
+    },
+    {
+      "doc_id": "tavily-8dcc7fd7ad20c2e4",
+      "chars": 3672,
+      "sha256": "92734ebed77058bcfd2d552d2fed6d394f0681034be3f4748330efdd73a64daa"
+    },
+    {
+      "doc_id": "tavily-35c116385e898de4",
+      "chars": 2251,
+      "sha256": "6b2df35fb8f4167599ea5a657a8df0ebd264b69be9a9b4b2c0f01d5621e4842a"
+    },
+    {
+      "doc_id": "tavily-c8bb20c0a56ecff5",
+      "chars": 12075,
+      "sha256": "be8d93afc5d8a2803adb664a93d279fca4313a020cac79af36c9a3b237f6f3e3"
+    },
+    {
+      "doc_id": "tavily-284a4be682003fa9",
+      "chars": 4484,
+      "sha256": "0a4bd059f5b435f1252cf7dec267adca7b3e478d1c8490127b09ec9e762e193e"
+    },
+    {
+      "doc_id": "tavily-1b9eac4b390256b3",
+      "chars": 785,
+      "sha256": "b5840f541ce2501ba68e48869fc3a7ae9b29426839714e481e10962bc7d04d1b"
+    },
+    {
+      "doc_id": "tavily-d55d9bb1d70642b9",
+      "chars": 821,
+      "sha256": "410a73c40ecc05ea5c37f971b83091de1932635caf73a477bcf6376601dd022a"
+    },
+    {
+      "doc_id": "tavily-744ab04b3ff8ac43",
+      "chars": 1242,
+      "sha256": "5cf6426ecbb942730255396b33cb6c838cae7f9023899d97c03b88703c9168fd"
+    },
+    {
+      "doc_id": "tavily-ea6abea2ed726258",
+      "chars": 1298,
+      "sha256": "960b4e5166005e9d30bdc4d73e1a8a6c1c7f03bba8bdee94a057674989ab069b"
+    },
+    {
+      "doc_id": "tavily-36394e987734b388",
+      "chars": 6108,
+      "sha256": "d65148f4dac8d8bd31739a2d1a4fc495092be2ae34e013ad785c679f413b7164"
+    },
+    {
+      "doc_id": "tavily-d29cf663a984222f",
+      "chars": 4314,
+      "sha256": "612ac661537d3866336f65c8de4bc0c100ab366e72f754639150eeea05ab4c1c"
+    },
+    {
+      "doc_id": "tavily-d52d16f74b9e9477",
+      "chars": 2800,
+      "sha256": "7e61c148806bd2900eb67dea9b5115511942ab74a5ee942a71b0f595f30b2036"
+    },
+    {
+      "doc_id": "tavily-97d23759016b1139",
+      "chars": 42761,
+      "sha256": "38598ea1528b7f2992daba2278e63598a26e5af094d3ed82fcccc3ae2042a31f"
+    },
+    {
+      "doc_id": "tavily-d679f9a973fbf922",
+      "chars": 2848,
+      "sha256": "255088762732d8bfdc28782c5e9d085b1350dc18574ed9a1279ff3cfcd9da9df"
+    },
+    {
+      "doc_id": "tavily-bef21ec49f622836",
+      "chars": 15180,
+      "sha256": "7c00f422a5f2f5ba8b20ff7f8e5dd2c9d26549b5dbf2ba36f4ae74b4cb83e894"
+    },
+    {
+      "doc_id": "tavily-196eaaa1c2f8a134",
+      "chars": 995,
+      "sha256": "f3a7fe2d0b43bb357ae7b42195f9a4259ff06e805c7dfe97b02534913c872023"
+    },
+    {
+      "doc_id": "tavily-3daea7f517555e84",
+      "chars": 664,
+      "sha256": "1d5d2223cd2d3c85dbdb27dbe254f6955b2a8806039dabc5c43d13330d5b3561"
+    },
+    {
+      "doc_id": "tavily-665522266b7190f8",
+      "chars": 87007,
+      "sha256": "a256e9c489b2a9178753d5979d68e90060505807a4aea42f6c2d58b6a88dca03"
+    },
+    {
+      "doc_id": "tavily-3e351411b3f25548",
+      "chars": 1604,
+      "sha256": "870b20607433c07339edde9c2b6d5d07235a51bfea0912816e747fdd2f394983"
+    },
+    {
+      "doc_id": "tavily-416c84c6a7ff96bf",
+      "chars": 1715,
+      "sha256": "bb749952ac39d5c5a5da018616ae54ecc293c9a6c999981881cda2aa8a0f20bd"
+    },
+    {
+      "doc_id": "tavily-7a8ee5aa81577ee5",
+      "chars": 4530,
+      "sha256": "4a4275242c6aaafc6a804237f3818484966f49eda6c88d9412b42777fca72182"
+    },
+    {
+      "doc_id": "tavily-3b737865bc1f9fc4",
+      "chars": 29137,
+      "sha256": "a462873efb9fece155f1a4875d05c29b74db83da4884cba5faf767f1f4714af4"
+    },
+    {
+      "doc_id": "tavily-14fda2cc791c729a",
+      "chars": 15333,
+      "sha256": "df459047fd2ce416925d2dc09517e5db6dc2962c7a97ff1920ae2eef58750ec2"
+    },
+    {
+      "doc_id": "tavily-15d9e94498e499d5",
+      "chars": 2777,
+      "sha256": "0e8b6213f4aeed8907a3cd4ecf9e6ae6ce89e19f0607c1b71303d4fc70ae25a1"
+    },
+    {
+      "doc_id": "tavily-04769ed6340606da",
+      "chars": 1930,
+      "sha256": "0007c42d5ac928e2f34f38771f338c6743f9dbc73363f5de8999cf74cf0ecade"
+    },
+    {
+      "doc_id": "tavily-8507859d36af3360",
+      "chars": 6528,
+      "sha256": "051b2673b03f77714072407eac810d93b3132c9523b83dbe57253fb531c1cc70"
+    },
+    {
+      "doc_id": "tavily-59b9e1c46e7767b8",
+      "chars": 7386,
+      "sha256": "6f06a8507280bc3ae72b2d0fc1df93acb54ceddb7a3f989d4067bd0aace33011"
+    },
+    {
+      "doc_id": "tavily-a6b0b293502b47a7",
+      "chars": 4449,
+      "sha256": "f7aaa6e452fca71cb9e0af622f8655a0254f631a9045f13de1ffb40486ab4042"
+    },
+    {
+      "doc_id": "tavily-391825a38f8330e6",
+      "chars": 2728,
+      "sha256": "57170a50d0f66517878ec2234e4db616500782ec9159b196e8c51d8c2366cb18"
+    },
+    {
+      "doc_id": "tavily-4521a8619c5998ad",
+      "chars": 1349,
+      "sha256": "f2a6f96dbadc32c35c86b1735ff618ed6c71e1b0ffe9f0011e68d6d1b23ee7d1"
+    }
+  ],
+  "gate_status": "passed",
+  "revision_note": "2026-10-15：记录哈希更新 —— 元数据标准化（缺失置 null + 新增 year/year_status）与 chunk 增加元数据继承字段（doc_title/doc_year/doc_year_status/doc_authors）之后重算。"
+}

@@ -1,0 +1,7 @@
+*.pdf
+*.docx
+.gate6-restricted/
+__pycache__/
+*.pyc
+._*
+.DS_Store

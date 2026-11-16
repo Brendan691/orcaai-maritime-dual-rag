@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: 海事双源检索增强生成的效用边界与可追溯实现 — 代码与公开数据
+message: 若使用本仓库的代码或数据，请引用对应论文与仓库。
+type: software
+authors:
+  - name: "The OrcaAI Project Authors"
+
+version: 0.1.0
+date-released: "2026-11-16"
+license: MIT
+repository-code: "https://github.com/【待填仓库地址】"
+keywords:
+  - retrieval-augmented generation
+  - dual-source retrieval
+  - maritime knowledge management
+  - human evaluation
+  - citation attribution

@@ -1,0 +1,67 @@
+query_id,checkpoint_index,query_type,tags,checkpoint_text
+H01,1,local_enough,J,内河船舶加注作业时风力应不超过6级
+H01,2,local_enough,J,沿海船舶加注作业时风力应不超过7级
+H02,1,local_enough,T;O,2025年合规限值为89.34 gCO₂eq/MJ（较基线降低2%，精确值89.33680）
+H03,1,local_enough,O,建成3个以上智能航运试点区
+H03,2,local_enough,O,开通5条以上智能航运试点航线
+H03,3,local_enough,O,形成10个以上典型应用场景
+H03,4,local_enough,O,投入100艘以上智能船舶
+H04,1,local_enough,T;J,2024年7月1日及以后签订建造合同的新造船
+H04,2,local_enough,J,适用船型为国际航行客船、500总吨及以上货船等
+H05,1,local_enough,O,可面临民事罚款（按法定上限或交易价值两倍中较高者计罚）并可能被刑事起诉
+H06,1,local_enough,O,4.9%的受调查船员存在心理风险
+H06,2,local_enough,O,0.4%存在心理异常
+H07,1,local_enough,O,锂电池储能柜属于UN3536“货运组件中的锂电池”
+H07,2,local_enough,J,按IMDG规则第9类危险品管理
+H08,1,local_enough,T,禁令2024年7月1日生效
+H08,2,local_enough,O,HFO定义为15°C时密度高于900 kg/m³或50°C时运动粘度高于180 mm²/s的油类
+H09,1,web_enough,T;O,2024年货运量约3790万吨、创历史新高
+H09,2,web_enough,T;O,2025年货运量约3702万吨（仍在3700万吨以上高位）
+H10,1,web_enough,O,世界首艘全电动自主集装箱船是挪威“Yara Birkeland”号
+H11,1,web_enough,O,马士基估计损失约3亿美元
+H12,1,web_enough,T;O,2025年1月10日共指定183艘船舶（主要为影子船队油轮）
+H13,1,web_enough,O,任何24小时期间内不少于10小时
+H13,2,web_enough,O,任何7天期间内不少于77小时
+H14,1,web_enough,T;O,在营船队规模约123艘（2026年3月AFI口径）至150余艘（2026年版展望口径）的量级
+H14,2,web_enough,T;O,指出新订单大幅降温的趋势（如2026年上半年仅2艘、上年同期40艘，或同等量级证据）
+H15,1,web_enough,T,2022年8月2日签署谅解备忘录（MOU）建立
+H16,1,web_enough,T;O,碳价处于90元/吨以上、逼近100元/吨的水平（2026年8月31日收盘97.90元/吨）
+H17,1,complementary,O,化石（天然气制）甲醇全生命周期排放较MGO还高约10%
+H17,2,complementary,O,绿色甲醇较化石燃料最高减排约95%（常见测算区间60%–95%）
+H18,1,complementary,T;O,2026年9月30日前须就2025年度排放按70%比例清缴配额
+H18,2,complementary,T;O,2026年EUA碳价约在80—90欧元/吨区间（1月突破90、8月约82、全年预测均价约80）
+H19,1,complementary,T,"2025年7月WinGD全球首台商用氨燃料二冲程主机X52DF-A交付（装于EXMAR 46,000 m³ LPG/氨双燃料船）"
+H19,2,complementary,O,加注作业关键安全要求：氨蒸气处理出口浓度不超过110 ppm、应急发电能力满足海上18小时/内河1小时（答出任一即可，答全更佳）
+H20,1,complementary,O,能举出至少两条中国共建走廊（如上海—巴塞罗那、上海—安特卫普-布鲁日、上海—墨尔本、青岛—汉堡、青岛—威廉港、宁波舟山—HAROPA）
+H20,2,complementary,O,全球绿色航运走廊倡议已达84个（GMF 2025年度报告）
+H20,3,complementary,O,指出全球走廊建设已有实质推进（如GMF 2025年度报告：首次有4条走廊进入“实现”阶段）
+H21,1,complementary,T;O,"全球首个超大型改装项目为20,000 TEU船、2025年9月在上海中远海运重工完工"
+H21,2,complementary,O,关键经验：放弃整体模块吊装、改为地面组装后集成上船
+H21,3,complementary,T;O,列出2025年9月首制船完工之后的后续进展（如项目扩展为四艘、2026年4月收官等，任一即可）
+H22,1,complementary,J,关闭AIS被美国官方列为典型欺骗性运输做法/危险信号，须开展尽职调查与监控
+H22,2,complementary,T;O,近期执法案例：2025年及以后的即可
+H23,1,complementary,O,实践案例：“奥尔坎”轮装载82个集装箱式锂电池储能系统自南通驶往安特卫普
+H23,2,complementary,T,IMDG规则第42-24修正案自2026年1月1日起强制实施
+H23,3,complementary,J;E,UN3536积载类调整为D类即仅限舱面积载（并禁止载于载客超25人客船）
+H24,1,complementary,O,中国船员心理风险4.9%、心理异常0.4%（低于全国常模8%/2%）
+H24,2,complementary,O,国际海员幸福指数2025年第二季度为7.54/10
+H25,1,conflicting,T,裁决：不会于2028年生效，本地“强制版2028年1月1日生效”的时间表已过时
+H25,2,conflicting,T,非强制《MASS规则》实际于2026年5月MSC 111通过、2026年7月1日起生效
+H25,3,conflicting,T,强制版计划最早2030年7月前通过、2032年1月1日生效
+H26,1,conflicting,J,裁决：现有营运船舶有网络安全强制合规要求
+H26,2,conflicting,J;T,IMO MSC.428(98)要求SMS纳入网络风险管理，自2021年1月1日后首次DOC年度审核起适用所有ISM船舶
+H26,3,conflicting,J;E;T,UR E26/27船级强制范围限于2024年7月1日及以后签订建造合同的新造船
+H27,1,conflicting,T,裁决：尚未正式通过，“已通过并将于2027年生效”不成立
+H27,2,conflicting,T,2025年4月MEPC 83为“批准”草案（approved）而非正式通过（adopt）
+H27,3,conflicting,T,2025年10月特别会议（MEPC/ES.2）休会12个月、未予通过
+H28,1,conflicting,O,"现行上限为每次违规377,700美元或交易价值两倍取高"
+H28,2,conflicting,T,"裁决：本地所载295,141美元系2020年调整值、已过时（现值高出约28%）"
+H29,1,conflicting,J,裁决：不止覆盖发电行业，“只覆盖发电”已过时
+H29,2,conflicting,T;J,2025年3月扩围新增钢铁、水泥、铝冶炼，现覆盖四个行业
+H30,1,conflicting,T,裁决：氢燃料安全临时导则已经出台
+H30,2,conflicting,T,MSC 111（2026年5月）批准《船舶使用氢燃料安全临时导则》（MSC.1/Circ.1701）
+H31,1,conflicting,T,裁决：经济方案已经确定（2025年4月MEPC 83批准），“方案未定、仍在角逐”已过时
+H31,2,conflicting,O,机制为GFI双层合规定价：未达标船购买补救单位、缴款注入IMO净零基金
+H32,1,conflicting,J,裁决：尚未纳入EU ETS配额清缴义务
+H32,2,conflicting,J;T,400—4999总吨普通货船与400总吨以上离岸船自2025年1月1日起仅纳入MRV
+H32,3,conflicting,J;E,ETS配额清缴义务的船舶门槛仍为5000总吨
