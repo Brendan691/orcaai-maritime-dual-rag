@@ -31,4 +31,4 @@ python tools/reproduce_key_numbers.py
 
 代码采用 MIT 许可（`LICENSE-CODE`）；数据与文档采用 CC BY 4.0（`LICENSE-DATA`）。引用信息见 `CITATION.cff`。
 
-仓库地址：`https://github.com/【待填仓库地址】`
+仓库地址：`https://github.com/Brendan691/orcaai-maritime-dual-rag`
