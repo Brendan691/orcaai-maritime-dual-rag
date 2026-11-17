@@ -1,0 +1,5 @@
+mode,metric,ms
+sync,P50,3613.5
+sync,P95,3868.3
+async,P50,23341.3
+async,P95,36620.8
