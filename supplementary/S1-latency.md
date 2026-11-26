@@ -1,24 +1,24 @@
-# S1 同步与异步执行的延迟对比
+# Supplementary S1: Synchronous versus asynchronous latency
 
-对应论文第 4 节（工程审计与故障处置复验）的延迟补充分析。图：`figures/s1_latency.pdf`（同名 `.png`/`.svg`，对数轴，中位数与第 95 百分位）；数据：`data/s1_latency.csv`。
+Latency supplementary analysis for Section 4 (engineering audit and fault-handling verification). Figure: `figures/s1_latency.pdf` (also `.png`/`.svg`; log scale, median and 95th percentile); data: `data/s1_latency.csv`.
 
-## 环境
+## Environment
 
-Apple M4（10 个逻辑核：4 性能核 + 6 能效核）、16 GiB 内存、macOS 27.0.1（arm64）、CPython 3.13.13。全程本地执行：`external_api_calls=0`、`live_web_calls=0`、`generation_calls=0`；重排模型 bge-reranker-v2-m3 只加载一次（3.679 s），冻结输入包只加载一次（1.014 s）。异步并发 4，重排后端设 `torch.set_num_threads(4)`。
+Apple M4 (10 logical cores: 4 performance and 6 efficiency cores), 16 GiB memory, macOS 27.0.1 (arm64), CPython 3.13.13. All execution was local: `external_api_calls=0`, `live_web_calls=0`, `generation_calls=0`. The bge-reranker-v2-m3 model was loaded once (3.679 s) and the frozen input package was loaded once (1.014 s). Asynchronous concurrency was 4, and the reranking backend used `torch.set_num_threads(4)`.
 
-## 协议
+## Protocol
 
-预热 1 轮（两模式各 1 轮）；正式 AB/BA 交替 10 轮（奇偶轮互换 sync/async 顺序以抵消顺序效应），每轮 8 条开发查询 × 2 模式 = 80 次/模式。按轮次采集后取 P50/P95；单进程、同机同模型，wall_seconds=700.2（不含报告写盘）。负载记录：正式测试前 load average 4.39/3.70/4.21，峰值 RSS 约 5.57 GB。
+One warm-up round (one round per mode); 10 formal AB/BA alternating rounds (odd and even rounds swapped the sync/async order to offset order effects), each round containing 8 development queries × 2 modes = 80 runs per mode. P50/P95 were computed from the per-round measurements; single process, same machine, same model, wall_seconds = 700.2 (excluding report writing). Load before the formal test: load average 4.39/3.70/4.21; peak RSS about 5.57 GB.
 
-## 结果
+## Results
 
-| 模式 | P50 | P95 |
+| Mode | P50 | P95 |
 |---|---:|---:|
-| 同步 | 3613.5 ms | 3868.3 ms |
-| 异步 | 23341.3 ms | 36620.8 ms |
+| Synchronous | 3613.5 ms | 3868.3 ms |
+| Asynchronous | 23341.3 ms | 36620.8 ms |
 
-异步 P50 为同步的 6.459 倍。两模式输出等价（80/80 一致；另有 160/160 与主实验参考输出一致）。
+The asynchronous P50 was 6.459 times the synchronous P50. The two modes produced equivalent outputs (80/80 agreement; an additional 160/160 agreed with the main-experiment reference outputs).
 
-## 限制
+## Limitations
 
-单机本地测量，不含网络往返与生产并发条件，不代表生产吞吐。
+Single-machine local measurement; it does not include network round trips or production concurrency and does not represent production throughput.

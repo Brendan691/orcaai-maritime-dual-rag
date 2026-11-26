@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""对已有 dual 答案执行独立模型引用绑定，生成新的 dual_localized 答案。"""
+"""Perform independent model-based citation binding on existing dual answers to produce dual_localized answers."""
 
 from __future__ import annotations
 

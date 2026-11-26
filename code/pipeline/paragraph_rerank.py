@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""法规文本的条款/段落感知重排：子单元打分后回填父 chunk。"""
+"""Clause- and paragraph-aware reranking for regulatory text: score subunits, then backfill the parent chunk."""
 
 from __future__ import annotations
 
@@ -25,7 +25,7 @@ def _call_rerank(query: str, documents: list[str], endpoint: str) -> list[float]
 
 
 def rerank_documents(query: str, documents: list[str], endpoint: str) -> list[float]:
-    """Chunk-only 基线：整块直接参与交叉编码器。"""
+    """Chunk-only baseline: the whole chunk is passed directly to the cross-encoder."""
     return _call_rerank(query, documents, endpoint)
 
 
