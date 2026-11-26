@@ -1,5 +1,5 @@
-# S2 检索变体宏平均 NDCG@5
+# Supplementary S2: Macro-averaged NDCG@5 of retrieval variants
 
-对应论文第 3.1 节的检索层次要分析。图：`figures/s2_variants.pdf`（同名 `.png`/`.svg`，主配置高亮）；数据：`data/s2_variants.csv`。
+Retrieval-layer secondary analysis for Section 3.1. Figure: `figures/s2_variants.pdf` (also `.png`/`.svg`; the primary configuration is highlighted); data: `data/s2_variants.csv`.
 
-12 个变体在正式查询集上的宏平均 NDCG@5 排序见图 S2（31 条查询，H13 因无相关文档致指标未定义而剔除）。该分析在执行前已声明为次要分析，未用于主配置选型或确认性检验。
+The macro-averaged NDCG@5 ranking of the 12 variants on the formal query set is shown in Fig. S3 (31 queries; H13 was excluded because no relevant document made the metric undefined). This analysis was prespecified as secondary and was not used for primary-configuration selection or confirmatory testing.

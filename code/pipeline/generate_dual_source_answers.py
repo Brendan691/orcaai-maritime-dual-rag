@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Generate local-only, web-only, and dual-source answers with bound citations.
 
-DEPRECATED（2026-10-17）：本脚本的生成设置已与冻结方案不符——
-它只覆盖 3 个来源条件、使用文档级上下文与温度 0.2，不能复现当前的
-官方实验配置。请勿用它产出新的实验结论。
+DEPRECATED (2026-10-17): the generation settings in this script no longer match the frozen protocol.
+It covers only three source conditions, uses document-level context and temperature 0.2, and cannot
+reproduce the current official experimental configuration. Do not use it to produce new conclusions.
 
-保留原因：历史结果由它生成，需留档以便追溯。新实验请使用当前冻结
-配置对应的生成入口。
+The script is retained because historical results were generated with it and must remain traceable.
+New experiments should use the generation entry point for the current frozen configuration.
 """
 
 from __future__ import annotations
@@ -36,8 +36,8 @@ def evidence_block(index: int, source_type: str, title: str, text: str, identity
 
 def main() -> None:
     print(
-        "[DEPRECATED] generate_dual_source_answers.py 的条件矩阵与生成参数已冻结失效，"
-        "仅作历史留档，不要用于产出新结论。",
+        "[DEPRECATED] The condition matrix and generation parameters in generate_dual_source_answers.py are frozen and invalid; "
+        "this script is retained for historical reference only and must not be used to produce new conclusions.",
         file=sys.stderr,
     )
     parser = argparse.ArgumentParser()

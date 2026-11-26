@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""把答案中的引用标记解析为段落级锚点（偏移+引文+前后缀+内容哈希+状态）。"""
+"""Resolve citation markers in answers into paragraph-level anchors (offset, quote, context, content hash, status)."""
 
 from __future__ import annotations
 

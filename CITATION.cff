@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: 海事双源检索增强生成的效用边界与可追溯实现 — 代码与公开数据
-message: 若使用本仓库的代码或数据，请引用对应论文与仓库。
+title: "Conditional gains and traceable citations in dual-source retrieval-augmented generation for maritime question answering — code and public data"
+message: "If you use the code or data in this repository, please cite the corresponding paper and this repository."
 type: software
 authors:
   - name: "The OrcaAI Project Authors"

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""中文检索使用的 tokenization、归一化和摘录工具。"""
+"""Tokenization, normalization, and excerpt utilities for Chinese retrieval."""
 
 from __future__ import annotations
 

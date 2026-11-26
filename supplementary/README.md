@@ -1,14 +1,14 @@
-# 补充材料
+# Supplementary Information
 
-对应论文 *Conditional gains and traceable citations in dual-source retrieval-augmented generation for maritime question answering*（中文本稿：《海事双源检索增强生成的效用边界与可追溯实现》）的补充材料。
+Supplementary material for *Conditional gains and traceable citations in dual-source retrieval-augmented generation for maritime question answering*.
 
-## 投稿用单文件
+## Compiled submission file
 
-- **`Supplementary-Information.pdf`**：完整 Supplementary Information（6 页），含 Supplementary Notes A1–A6、Supplementary Figs. S1–S3、Supplementary Tables S1–S4；正文所有 Supplementary 指针均可在该文件中找到。
+- **`Supplementary-Information.pdf`**: complete Supplementary Information (6 pages), containing Supplementary Notes A1–A6, Supplementary Figs. S1–S3, and Supplementary Tables S1–S4. Every Supplementary pointer in the main text can be found in this file.
 
-## 分项源文件
+## Source components
 
-- **S1 同步与异步执行的延迟对比**：`S1-latency.md`；图 `figures/s1_latency.pdf`（同名 `.png`/`.svg`）；数据 `data/s1_latency.csv`。对应 SI 的 **Supplementary Fig. S2**。
-- **S2 检索变体宏平均 NDCG@5**：`S2-retrieval-variants.md`；图 `figures/s2_variants.pdf`（同名 `.png`/`.svg`）；数据 `data/s2_variants.csv`。对应 SI 的 **Supplementary Fig. S3**。
+- **S1: Synchronous versus asynchronous latency**: `S1-latency.md`; figure `figures/s1_latency.pdf` (also `.png`/`.svg`); data `data/s1_latency.csv`. This component corresponds to **Supplementary Fig. S2** in the compiled SI.
+- **S2: Macro-averaged NDCG@5 of retrieval variants**: `S2-retrieval-variants.md`; figure `figures/s2_variants.pdf` (also `.png`/`.svg`); data `data/s2_variants.csv`. This component corresponds to **Supplementary Fig. S3** in the compiled SI.
 
-S1 为单机本地测量，不含网络往返与生产并发，不代表生产吞吐；S2 为正式查询集的次要分析（31 条查询，H13 因无相关文档致指标未定义而剔除）。
+S1 is a single-machine local measurement and does not include network round trips or production concurrency, so it does not represent production throughput. S2 is a secondary analysis of the formal query set (31 queries; H13 was excluded because no relevant document made the metric undefined).

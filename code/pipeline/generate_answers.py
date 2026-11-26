@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""pilot stage：8 开发查询 × 4 条件 = 32 个答案（统一证据选择 + 冻结提示词 + temperature=0）。"""
+"""Pilot stage: 8 development queries × 4 conditions = 32 answers (unified evidence selection, frozen prompts, temperature=0)."""
 
 from __future__ import annotations
 

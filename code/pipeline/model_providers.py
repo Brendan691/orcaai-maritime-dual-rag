@@ -252,7 +252,7 @@ def rerank_batch(
             ]
         elapsed = time.perf_counter() - started
         if len(chunk_groups) != len(chunk):
-            raise RuntimeError("批量中文重排返回数量不完整")
+            raise RuntimeError("Batch Chinese reranking returned an incomplete number of results")
         groups.extend(chunk_groups)
         if on_batch_complete is not None:
             on_batch_complete(start, chunk_groups, elapsed)

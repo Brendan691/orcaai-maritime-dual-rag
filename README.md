@@ -1,35 +1,37 @@
-# 海事双源检索增强生成的效用边界与可追溯实现
+# Conditional gains and traceable citations in dual-source retrieval-augmented generation for maritime question answering
 
-论文配套的系统实现与公开数据。
+Companion implementation and public data for the paper.
 
-系统在固定候选与证据条数下融合本地文档与网页证据，生成带引用绑定的答案；仓库同时提供论文统计结果的可复现输入。
+The system fuses local-document and web evidence under fixed candidate and retained-evidence counts, generates answers with bound citations, and provides reproducible inputs for the paper's statistical results.
 
-## 目录
+## Repository layout
 
-- `code/pipeline/`：检索、融合、精排、答案生成、引用绑定与定位
-- `code/analysis/`：统计与核验
-- `code/configs/`、`code/prompts/`：模型配置与提示词
-- `data/`：语料清单、查询、核心检查点、相关性标注、逐查询得分与检查点计数
-- `supplementary/`：补充材料 S1（同步/异步延迟对比）与 S2（检索变体 NDCG@5），含图件与数据
-- `tools/`：完整性校验与关键数字复现
+- `code/pipeline/`: retrieval, fusion, reranking, answer generation, citation binding, and localization
+- `code/analysis/`: statistical analysis and verification
+- `code/configs/`, `code/prompts/`: model configuration and prompts
+- `data/`: corpus manifest, queries, core checkpoints, relevance judgments, per-query scores, and checkpoint counts
+- `supplementary/`: compiled Supplementary Information PDF, S1 (sync/async latency), S2 (retrieval-variant NDCG@5), figures, and data
+- `tools/`: integrity checks and reproduction of key numbers
 
-## 数据说明
+## Data
 
-- **公开**：语料清单（48 篇元数据，无正文）、40 条人工撰写查询、核心检查点、相关性标注、去标识化得分与检查点计数、代码、补充材料 S1/S2 及其图件与数据。
-- **受限**：原始答案与证据正文、原始评分导出、评分员与答案的对应关系、盲键；仓库内不包含，访问需经通讯作者申请并说明用途。
-- **第三方**：语料正文、网页内容与模型权重版权归原权利人，未随仓库分发。
+- **Public**: corpus manifest (metadata for 48 documents, no full text), 40 human-written queries (32 formal and 8 development), core checkpoints, relevance judgments, de-identified scores, checkpoint counts, code, and Supplementary S1/S2 with figures and data.
+- **Restricted**: raw answers and evidence text, raw rating exports, rater–answer mappings, and blind keys. These are not included in the repository and are available from the corresponding author upon reasonable request.
+- **Third party**: copyright in corpus text, web content, and model weights remains with the original rights holders; these materials are not distributed with this repository.
 
-## 复现
+**Language note.** All documentation, metadata, and code comments in this repository are in English. Research materials in `data/` and `code/prompts/`, the functional Chinese tokenization/stopword rules used for retrieval, and the legacy gate-report templates in `code/analysis/` remain in their original Chinese because they are study materials, functional retrieval rules, or archived internal reports; translating them would change the study or the historical record. Absolute local filesystem paths also retain their original names.
+
+## Reproduction
 
 ```bash
 python tools/check_checksums.py
 python tools/reproduce_key_numbers.py
 ```
 
-第二个脚本从公开的逐查询得分复算主对比、交互与等效性检验，并与论文数值对照。
+The second script recomputes the primary contrast, interaction, and equivalence tests from the public per-query scores and compares them with the paper's values.
 
-## 许可与引用
+## License and citation
 
-代码采用 MIT 许可（`LICENSE-CODE`）；数据与文档采用 CC BY 4.0（`LICENSE-DATA`）。引用信息见 `CITATION.cff`。
+Code is released under the MIT License (`LICENSE-CODE`); data and documentation are released under CC BY 4.0 (`LICENSE-DATA`). Citation information is in `CITATION.cff`.
 
-仓库地址：`https://github.com/Brendan691/orcaai-maritime-dual-rag`
+Repository: `https://github.com/Brendan691/orcaai-maritime-dual-rag`

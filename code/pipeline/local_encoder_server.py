@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""本地 BGE-M3 编码 sidecar：直接 import 线上共享模块，暴露 /embed。
+"""Local BGE-M3 encoding sidecar: imports the shared online module and exposes /embed.
 
-线上后端（无 torch）通过 HTTP 调用本进程；离线脚本直接 import 同一模块。
-两条路径执行的是同一份代码（backend/src/services/bge_encoder.py）。
+The online backend (without torch) calls this process over HTTP; offline scripts import the same module.
+Both paths execute the same code (backend/src/services/bge_encoder.py).
 """
 
 from __future__ import annotations
@@ -20,7 +20,7 @@ from src.services import bge_encoder  # noqa: E402
 
 
 class Handler(BaseHTTPRequestHandler):
-    def log_message(self, fmt, *args):  # 静默
+    def log_message(self, fmt, *args):  # silent
         return
 
     def _send(self, code: int, payload: dict) -> None:
@@ -72,7 +72,7 @@ def main() -> None:
     parser.add_argument("--port", type=int, default=8765)
     args = parser.parse_args()
     # 预热：确保首个请求不承担加载成本
-    bge_encoder.encode(["预热"])
+    bge_encoder.encode(["warm-up"])
     server = ThreadingHTTPServer((args.host, args.port), Handler)
     print(f"listening on http://{args.host}:{args.port}/embed", flush=True)
     server.serve_forever()
