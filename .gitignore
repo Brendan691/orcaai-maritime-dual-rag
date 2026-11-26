@@ -1,5 +1,6 @@
 *.pdf
 !supplementary/figures/*.pdf
+!supplementary/*.pdf
 *.docx
 .gate6-restricted/
 __pycache__/
